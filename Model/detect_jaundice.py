@@ -2,7 +2,7 @@ import cv2 as cv
 import pickle
 import numpy as np
 from jaundice.settings import BASE_DIR
-from ML.feature_extraction import getMostDominantColor
+from Model.feature_extraction import getMostDominantColor
 import keyboard
 
 eye=cv.CascadeClassifier(f"{BASE_DIR}/Model/eye.xml")
