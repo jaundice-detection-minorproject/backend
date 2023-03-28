@@ -53,6 +53,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',  # Replace with your React app's origin
+    'https://jaundiceminorproject.netlify.app',  # Replace with your React app's origin
 ]
 
 ROOT_URLCONF = 'jaundice.urls'
