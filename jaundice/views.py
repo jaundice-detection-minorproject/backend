@@ -18,7 +18,7 @@ def haveJaundice(request):
         if(len(target)<=1):
             return JsonResponse({"status":False,"msg":"Eye Not Detect"},status=404)
         predict,prob=detect_jaundice.findJaundice(target)
-        return JsonResponse({"status":True,"Predict":predict,"Probability":"%.2f"%(prob)},status=200)
+        return JsonResponse({"status":True,"Predict":predict,"Probability":"%.2f"%(prob*100)},status=200)
     except Exception as e:
         print(e)
         return JsonResponse({"status":False},status=500)
