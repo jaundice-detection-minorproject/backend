@@ -54,7 +54,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000', 
     'https://jaundiceminorproject.netlify.app',
-    'https://medicalcare.netlify.app',
+    'https://medicalcares.netlify.app',
 ]
 
 ROOT_URLCONF = 'jaundice.urls'
